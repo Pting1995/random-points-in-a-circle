@@ -9,7 +9,16 @@
 </head>
 
 <body>
-    <canvas id="bellCanvas" width="500" height="500" style="background-color: black;"></canvas>
+    <section>
+        <canvas id="bellCanvas" width="500" height="500" style="background-color: black;"></canvas>
+        <div class="slidecontainer">
+            <input type="range" min="1" max="200" value="100" class="slider" id="radius">
+            <p>Radius Value: <span id="radiusPlaceholder"></span></p>
+            <input type="range" min="1" max="500" value="250" class="slider" id="timesToRepeat">
+            <p>Times to repeat: <span id="timesToRepeatPlaceholder"></span></p>
+        </div>
+    </section>
+
 </body>
 
 <script src="./index.js"></script>
